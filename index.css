@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2F1893;
+    margin: 20px 30px 20px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F1893;
+    padding: 20px;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+}
+.nav-links li .Overview{
+    filter: brightness(50%);
+}
+
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav-links li:last-child a {
+    color: var(--colors-white, #FFF);
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    border-radius: 100px;
+    background: var(--action-third, #E93A7D);
+    padding: 10px;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 2px solid black; */
+    
+}
+
+.content {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 427px;
+    height: 496px;
+    flex-shrink: 0;
+    color: var(--colors-white, #FFF);
+    /* border: 2px solid white; */
+    /* text-align: center; */
+    /* padding: 20px; */
+    
+    margin: 50px;
+}
+
+
+.headline {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.headline h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 4px;
+}
+
+.upper-content {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 180px;
+}
+
+.upper-content h5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 1px;
+}
+
+.lower-content {
+    width: 363px;
+    color: var(--colors-white, #FFF);
+}
+
+
+
+.learn-more {
+    width: 157px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    background-color: #E93A7D;
+    color: white;
+    border: none;
+     border-radius: 40px;
+     letter-spacing: 2px;
+    /* margin-top: 20px;  */
+}
+/* signup form */
+.above-content {
+    width: 470px;
+    color: var(--colors-heading, #1E0E62);
+    text-align: center;
+    background-color: white;
+    height: 600px;
+    padding:35px;
+    font-weight: bolder;
+   
+}
+.above-content .inner-above-content h3 strong {
+    font-weight: bold !important;
+  }
+  
+  
+  
+  
+  
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--colors-text, rgba(21, 20, 57, 0.40));
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 40px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--colors-grey, #EBEAED);
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-custom:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: var(--colors-grey, #EBEAED);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.checkbox-custom:after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #25DAC5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom:before,
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom:after {
+    opacity: 1;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #25DAC5;
+}
+
+
+
+.above-content  .inner-above-content{
+    margin: 40px;
+
+}
+
+.above-content h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
+    
+}
+
+.above-content input[type="text"],
+.above-content input[type="password"] {
+    width: 330px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 2px solid var(--colors-grey, #EBEAED);
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.above-content p {
+    color: var(--colors-text, rgba(21, 20, 57, 0.40));
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.above-content button.signin-button,
+.above-content button.twitter-button {
+    width: 330px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    border: none           ;
+}
+
+.above-content button.signin-button {
+    background: var(--action-secondary, #482BE7);
+}
+/* .divider {
+    position: relative;
+    width: 141.57px;
+    height: 2px;
+    top: 604.5px;
+    left: 784.5px;
+    background: #EBEAED;
+    border: 2px solid black;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-color: #EBEAED;
+} */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .or-text {
+    margin: 0 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  
+
+
+.above-content button.twitter-button {
+    background: var(--socials-twitter, #1DA1F2);
+}
+.account-section {
+    display: flex;
+    align-items: center;
+  }
+
+.above-content .p.or-text,
+.above-content  p.account-text {
+    color: var(--colors-text, rgba(21, 20, 57, 0.40));
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    
+
+}
+.above-content  p.account-text{
+    margin-left: 50px;
+}
+
+.account-section .signup-anchor {
+    width: 80px;
+    /* height: 28px; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    /* font-weight: 500; */
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #25DAC5;
+   /* border: 2px solid black; */
+    padding-left: 12px;
+    /* padding-top: 2px; */
+    text-decoration: none;
+    margin-top: -10px;
+    
+  }
+   
